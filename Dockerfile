@@ -20,5 +20,5 @@ WORKDIR /web
 RUN git clone https://github.com/wakky927/flaskML flaskML
 
 # Launch flask app
-ENV FLASK_APP /web/flaskML/app.py
+ENV FLASK_APP flaskML/app.py
 ENV FLASK_DEBUG 1
