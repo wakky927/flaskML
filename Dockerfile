@@ -12,8 +12,8 @@ RUN pip install -r /tmp/requirements.txt
 
 # Clone src from GitHub
 WORKDIR /web
-RUN git clone https://github.com/nanakenashi/image_clock.git clock
+RUN git clone https://github.com/wakky927/flaskML flaskML
 
 # Launch flask app
-ENV FLASK_APP /web/clock/app.py
-CMD flask run -h 0.0.0.0 -p $PORT
+# ENV FLASK_APP /web/flaskML/app.py
+# CMD flask run -h 0.0.0.0 -p $PORT
