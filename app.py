@@ -34,7 +34,7 @@ model = Net().to(device)
 
 # training static load
 model.load_state_dict(
-    torch.load("./mnist_cnn.pt", map_location=lambda storage, loc: storage)
+    torch.load("../mnist_cnn.pt", map_location=lambda storage, loc: storage)
 )
 
 model = model.eval()
@@ -50,7 +50,7 @@ def upload_file():
     if request.method == "POST":
         # temporary save
         f = request.files["file"]
-        filepath = "./static/" + datetime.now().strftime("%Y%m%d%H%M%S") + ".png"
+        filepath = "../static/" + datetime.now().strftime("%Y%m%d%H%M%S") + ".png"
         f.save(filepath)
 
         # read img
