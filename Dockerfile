@@ -17,8 +17,8 @@ RUN pip3 install -r /tmp/requirements.txt
 
 # Clone src from GitHub
 #WORKDIR /web
-RUN git clone https://github.com/wakky927/flaskML flaskML
+RUN git clone https://github.com/wakky927/flaskML web
 
 # Launch flask app
-ENV FLASK_APP /flaskML/app.py
+ENV FLASK_APP /web/app.py
 # CMD flask run -h 0.0.0.0 -p $PORT
