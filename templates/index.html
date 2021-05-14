@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="../../static/image/favicon.ico">
+    <link rel="icon" href="../static/image/favicon.ico">
     <meta charset="UTF-8">
     <title>My App</title>
 </head>
 <body>
     {% if result %}
-          <IMG SRC="{{filepath}} " BORDER="1"> Result is {{result}}.<BR>
+          <IMG SRC="{{filepath}} " BORDER="1"> Result is {{result}}, {{ filepath }}.<BR>
           <HR>
         {% endif %}
         Upload file<BR>
