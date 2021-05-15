@@ -21,4 +21,5 @@ RUN git clone https://github.com/wakky927/flaskML
 WORKDIR /web/flaskML
 
 # Launch flask app
-# CMD flask run -h 0.0.0.0 -p $PORT
+ENV FLASK_APP: app
+CMD flask run -h 0.0.0.0 -p 5000
