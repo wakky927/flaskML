@@ -1,4 +1,5 @@
 .idea
+design
 venv
 
-train.ipynb
+ai/train.ipynb
